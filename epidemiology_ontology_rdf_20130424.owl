@@ -1,0 +1,2156 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY epidemiology_ontology "http://epidemiology_ontology.owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span2 "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY snap2 "http://www.infomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.infomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:snap2="http://www.infomis.org/bfo/1.1/snap#"
+     xmlns:span2="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:epidemiology_ontology="http://epidemiology_ontology.owl#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:span="http://www.infomis.org/bfo/1.1/span#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <Ontology rdf:about="http://epidemiology_ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    <AnnotationProperty rdf:about="&oboInOwl;hasDefinition"/>
+    <AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    <AnnotationProperty rdf:about="&epidemiology_ontology;inDictionary"/>
+    <AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <AnnotationProperty rdf:about="&epidemiology_ontology;isDictionaryEntry"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000001 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000001">
+        <rdfs:label>transmission of infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en">Transmission of infectious agents. Any mechanism by
+which an infectious agent is spread from a source or reservoir to another person.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/Q000635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/TRANS/0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0242781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Transmission</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D018562</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000002 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000002">
+        <rdfs:label>direct transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000001"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10013045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000183</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>Direct and essentially immediate transfer of infectious agents to a
+receptive portal of entry through which human or animal infection may take place. This may be by direct contact such as touching, kissing, biting, or sexual intercourse or by the direct projection (droplet spread) of droplet spray onto the conjunctiva or the mucous membranes of the eyes, nose, or mouth. It may also be by direct exposure of susceptible
+tissue to an agent in soil, compost, or decaying vegetable matter or by the bite of a rabid animal. Transplacental transmission is another form of direct transmission.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>TRANS:0000001</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000003 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000003">
+        <rdfs:label>indirect transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000001"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>TRANS:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000186</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10021714</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Indirect_Contact_Transmission_Infection</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000004 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000004">
+        <rdfs:label>transplacental transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000017"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">false</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>TRANS:0000018</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000005 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000005">
+        <rdfs:label>vehicle-borne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000003"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>TRANS:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>Contaminated inanimate material or objects (fomites) such as toys, handkerchiefs, soiled clothes, bedding, cooking or eating utensils, and surgical instruments or dressings (indirect contact); water, food, milk; biological products including blood, serum, plasma, tissues, or organs; or any substance serving as an intermediate means by which an infectious agent is transported and introduced into a susceptible host through a suitable portal of entry. The agent may or may not have multiplied or developed in or on the vehicle before being transmitted.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000188</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000006 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000006">
+        <rdfs:label>vector-borne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000003"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10047176</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TRANS:0000005</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000007 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000007">
+        <rdfs:label>mechanical transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000006"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>Transmission of pathogens by a vector (e.g., a housefl y)
+without biological development in or dependence on the vector. Many fecal-oral infections
+are spread by this means.
+Includes simple mechanical carriage by a crawling or flying insect through soiling of its feet or proboscis or by passage of organisms through its gastrointestinal tract. This does not require multiplication or development of the organism.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>TRANS:0000003</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000008 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000008">
+        <rdfs:label>biological transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000006"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>Propagation (multiplication), cyclic development, or a
+combination of these (cyclopropagative) is required before the arthropod can transmit
+the infective form of the agent to humans. An incubation period (extrinsic) is required
+following infection before the arthropod becomes infective. The infectious agent may
+be passed vertically to succeeding generations (transovarian transmission); transstadial
+transmission is its passage from one stage of the life cycle to another, as nymph to adult.
+Transmission may be by saliva during biting or by regurgitation or deposition on the
+skin of feces or other material capable of penetrating subsequently through the bite
+wound or through an area of trauma from scratching or rubbing. Transmission by an
+infected nonvertebrate host must be differentiated for epidemiological purposes from
+simple mechanical carriage by a vector in the role of a vehicle. An arthropod in either
+role is termed a vector.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>TRANS:0000015</oboInOwl:hasDbXref>
+        <rdfs:comment>not sure about the xref</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000009 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000009">
+        <rdfs:label>transovarian transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000008"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>The infectious agent may
+be passed vertically to succeeding generations</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000010 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000010">
+        <rdfs:label>transstadial transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000008"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>passage from one stage of the life cycle to another, as nymph to adult.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000011 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000011">
+        <rdfs:label>airborne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000003"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>TRANS:0000009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>The dissemination of microbial aerosols to a portal of entry, usually the
+respiratory tract. Microbial aerosols are suspensions in the air of particles consisting
+partially or wholly of microorganisms. Particles in the range of 1 to 5 Î¼m are easily drawn
+into the alveoli of the lungs and may be retained there. They may remain suspended in
+the air for long periods.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10001534</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000012 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000012">
+        <rdfs:label>droplet nuclei-based transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000011"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>residues that result from evaporation of fl uid from droplets emitted
+by an infected host. Droplet nuclei also may be created purposely by a variety of
+atomizing devices, or accidentally, as in microbiology laboratories or in abattoirs,rendering plants, or autopsy rooms. They usually remain suspended in the air for long
+periods.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000013 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000013">
+        <rdfs:label>dust-based transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000011"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>The small particles of widely varying size that may arise from soil (fungus spores)
+or from clothes, bedding, or contaminated fl oors.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000014 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000014">
+        <rdfs:label>direct contact transmission</rdfs:label>
+        <equivalentClass rdf:resource="&epidemiology_ontology;EO:0000030"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000002"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>A mode of transmission of infection between an infected host and
+a susceptible host. Direct contact occurs when skin or mucous surfaces touch, as in
+shaking hands, kissing, and sexual intercourse. See also contagion; transmission of
+infection.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>TRANS:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Direct_Contact_Transmission_Infection</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>touching, kissing, biting, or sexual intercourse</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10021869</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000015 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000015">
+        <rdfs:label>direct projection transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000002"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDbXref>TRANS:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000185</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>droplet spread transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>projection (droplet spread) of droplet spray onto the conjunctiva or the mucous
+membranes of the eyes, nose, or mouth.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000016 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000016">
+        <rdfs:label>vertical transmission</rdfs:label>
+        <rdfs:label>common vehicle transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000005"/>
+        <oboInOwl:hasExactSynonym>common vehicle spread</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Transmission of a disease agent (infectious pathogen,
+toxic chemical, etc.) from a source that is common to those who acquire the disease.
+Common vehicles include air, water, food, injected substances. Legionellosis is an example
+of common vehicle spread in air that has passed through air conditioning equipment
+contaminated by the causal organism. HIV disease and hepatitis B and C can be spread
+among illicit drug users by the common vehicle of contaminated needles and syringes.
+Cholera and many other waterborne diseases are spread by the common vehicle of
+contaminated water. The principal modes of foodborne common vehicle spread were
+sonorously summarized by an anonymous author (probably Sir Andrew Balfour) in
+Memoranda on Medical Diseases in Tropical and Subtropical Areas,84 published by the
+British War Offi ce in 1914â€“1918: â€œ. . . careless carriers, contact cases, chiefl y cooks, dirty
+drinking water, the dust of dried dejecta and the repulsive regurgitation, dangerous
+droppings, and fi lthy feet of faecal-feeding fl ies fouling food.â€ The work has not lacked
+chances to be revised often in later wars.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000017 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000017">
+        <rdfs:label>vertical transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000002"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasExactSynonym>Maternal-Fetal Infection Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10047337</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Maternal Fetal Infection Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Maternal_Transmission</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Transmission, Maternal-Fetal Infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Infection Transmission, Fetomaternal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pathogen Transmission, Vertical</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Vertical Infectious Disease Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Infection Transmission, Maternal Fetal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>UMLS:C0242648</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>The transmission of
+infection from one generation to the next, especially of HIV infection from mother to
+infant prenatally, during delivery, or in the postnatal period via breast milk.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Infection Transmission, Maternal-Fetal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D018445</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Vertical Transmission of Infectious Disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/CSP/4005-0062</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Vertical Infection Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fetomaternal Infection Transmission</oboInOwl:hasExactSynonym>
+        <rdfs:comment>is this direct contact transmission?</rdfs:comment>
+        <oboInOwl:hasExactSynonym>Vertical Pathogen Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>intergenerational transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>TRANS:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Transmission, Fetomaternal Infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Transmission, Vertical Pathogen</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Infection Transmission, Vertical</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Transmission, Vertical Infection</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000018 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000018">
+        <rdfs:label>fomite-borne transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000005"/>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000190</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000019 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000019">
+        <rdfs:label>sexual transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000014"/>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Sexually_Transmitted_Disorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MDR/10040488</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>Transmission of infection by sexual contact</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000020 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000020">
+        <rdfs:label>vector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>In infectious disease epidemiology, an insect or any living carrier that transports an
+infectious agent from an infected individual or its wastes to a susceptible individual
+or its food or immediate surroundings. The organism may or may not pass through a
+developmental cycle within the vector.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000021 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000021">
+        <rdfs:label>vehicle of infection transmission</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The mode of transmission of an infectious
+agent from its reservoir to a susceptible host. This can be person-to-person, via food,
+vector-borne, etc.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000022 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000022">
+        <rdfs:label>fomites</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>Articles that convey infection to others because they have
+been contaminated by pathogenic organisms. Examples include a handkerchief, drinking
+glass, door handle, clothing, and toys.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>fomes</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:00000225 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:00000225">
+        <rdfs:label>host, intermediate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000024"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>In parasitology, the host in which asexual forms of the
+parasite develop. In malaria, this is a human or other vertebrate mammal or bird
+(vertebrate host).</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000023 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000023">
+        <rdfs:label>carrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A person or animal harboring a specifi c infectious agent in the absence of discernible
+clinical disease and serves as a potential source of infection. The carrier state
+may occur in an individual with an infection that is inapparent throughout its course
+(known as a healthy or asymptomatic carrier) or the carrier state may exist only during
+the incubation period, convalescence, and postconvalescence of an individual with a
+clinically recognizable disease (known as an incubatory carrier or convalescent carrier).
+The carrier state may be of short or long duration (temporary or transient carrier or
+chronic carrier)</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000024 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000024">
+        <rdfs:label>host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>1. A person or other living animal, including birds and arthropods, that affords
+subsistence or lodgment to an infectious agent under natural conditions. Some
+protozoa and helminths pass successive stages in alternate hosts of different species.
+Hosts in which the parasite attains maturity or passes its sexual stage are primary
+or defi nitive hosts; those in which the parasite is in a larval or asexual state are
+secondary or intermediate hosts. A transport host is a carrier in which the organism
+remains alive but does not undergo development.52
+2. In an epidemiological context, the host may also be the population or group;
+biological, social, and behavioral characteristics of this group relevant to health are
+called â€œhost factors.â€</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000025 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000025">
+        <rdfs:label>host, definitive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000024"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>In parasitology, the host in which sexual maturation occurs.
+In malaria, the mosquito (invertebrate host).</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000026 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000026">
+        <rdfs:label>acquaintance network</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ObjectAggregate"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>A group of persons in contact or communication among
+whom transmission of an infectious agent and of knowledge, behavior, and values is
+possible and whose social interaction may have health implications. See also context;
+transmission of infection.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000027 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000027">
+        <rdfs:label>containment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>The concept of regional eradication of communicable disease, fi rst proposed
+by Soper in 1949 for the elimination of smallpox.96 Containment of a worldwide
+communicable disease demands a globally coordinated effort, so that countries that
+have effected an interruption of transmission do not become reinfected following
+importation from neighboring endemic areas.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000028 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000028">
+        <rdfs:label>elimination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>Reduction of case transmission to a predetermined very low level; e.g.,
+elimination of tuberculosis as a public health problem was defi ned by the WHO (1991)
+as reduction of prevalence to a level below one case per million population. Compare
+eradication (of disease).</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000029 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000029">
+        <rdfs:label>contamination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>The presence of an infectious, toxic, or otherwise harmful agent (radioactive
+material, biological or chemical compounds) on or in the bodyâ€”also on or in clothes,
+bedding, toys, medical devices, surgical instruments or dressings, other objects; in
+air, water, and food; or on buildings or land. Pollution may be deemed distinct
+from contamination: the agent causing the pollution or present in the polluted
+environment is noxious but not necessarily infectious. Contamination of a body
+surface does not imply a carrier state. See also source of infection; transmission of
+infection.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000030 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000030">
+        <rdfs:label>contagion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>The transmission of infection by direct contact, droplet spread, or contaminated
+fomites. These are the modes of transmission specifi ed by Fracastorius
+(1484â€“1553) in De Contagione (1546). Contemporary usage is sometimes looser, but use
+of this term is best restricted to description of infection transmitted by direct contact.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000031 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000031">
+        <rdfs:label>communicable disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;Disposition"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasExactSynonym>infectious disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>(Syn: infectious disease) An illness due to a specifi c infectious
+agent or its toxic products that arises through transmission of that agent or its
+products from an infected person, animal, or reservoir to a susceptible host, either directly or indirectly through an intermediate plant or animal host, vector, or the inanimate
+environment. See also transmission of infection.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000032 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000032">
+        <rdfs:label>communicable period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;TemporalInterval"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>The time during which an infectious agent may be transferred
+directly or indirectly from an infected person to another person, from an infected
+animal to humans, or from an infected person to an animal, including arthropods. See
+also transmission of infection.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000033 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000033">
+        <rdfs:label>contact, primary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <oboInOwl:hasDefinition>Person(s) in direct contact or associated with a communicable
+disease case.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000034 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000034">
+        <rdfs:label>contact, secondary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <oboInOwl:hasDefinition>Person(s) in contact or associated with a primary contact.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000035 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000035">
+        <rdfs:label>droplet nuclei</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <oboInOwl:hasDefinition>A type of particle implicated in the spread of airborne infection.
+Droplet nuclei are tiny particles (1â€“10 Î¼m diameter) that represent the dried residue of
+droplets. They may be formed by (1) evaporation of droplets coughed or sneezed into
+the air or (2) aerosolization of infective materials. See also transmission of infection.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000036 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000036">
+        <rdfs:label>erradication (of disease)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>Termination of all transmission of infection by extermination
+of the infectious agent through surveillance and containment. Eradication, as
+in the instance of smallpox, is based on the joint activities of control and surveillance.
+Regional eradication has been successful with poliomyelitis and in some countries appears
+close to succeeding for measles. The term elimination is sometimes used to describe
+eradication of diseases such as measles from a large geographic region or political jurisdiction.
+In 1992, the WHO put it this way: â€œEradication is defi ned as achievement of a status whereby no further cases of a disease occur anywhere, and continued control
+measures are unnecessary.â€ Smallpox was eradicated in 1977, based on joint control and
+surveillance activities.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000037 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000037">
+        <rdfs:label>generation time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;TemporalInterval"/>
+        <oboInOwl:hasDefinition>The interval between receipt of infection by the host and the latterâ€™s
+maximal infectivity. This applies to both clinical cases and inapparent infections. With
+person-to-person transmission of infection, the interval between cases is determined by
+the generation time. See serial interval. See also incubation period.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000038 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000038">
+        <rdfs:label>infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <oboInOwl:hasDefinition>(Syn: colonization) The entry and development or multiplication of an
+infectious agent in the body of man or animals. Infection is not synonymous with infectious disease; the result may be inapparent or manifest. The presence of living
+infectious agents on exterior surfaces of the body is called â€œinfestationâ€ (e.g., pediculosis,
+scabies). The presence of living infectious agents upon articles of apparel or
+soiled articles is not infection, but represents contamination of such articles. See
+also inapparent infection; transmission of infection.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>colonization</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000039 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000039">
+        <rdfs:label>exposure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>Proximity and/or contact with a source of a disease agent in such a manner that
+effective transmission of the agent or harmful effects of the agent may occur.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000040 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000040">
+        <rdfs:label>focus of infection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;SpatialRegion"/>
+        <oboInOwl:hasDefinition>A defi ned and circumscribed locality containing the epidemiological
+factors needed for transmission: a human community, a source of infection, a
+vector population, and appropriate environmental conditions.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000041 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000041">
+        <rdfs:label>isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>Separation, for the period of communicability, of infected persons or animals from
+others under such conditions as to prevent or limit the transmission of the infectious
+agent from those infected to those who are susceptible or who may spread the agent
+to others.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000042 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000042">
+        <rdfs:label>abortion rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The estimated annual number of abortions per 1000 women of reproductive
+age (usually defi ned as ages 15â€“44).</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000043 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000043">
+        <rdfs:label>abortion ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The estimated number of abortions per 100 live births in a given
+year.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000044 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000044">
+        <rdfs:label>absolute rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of specified health events (disease onset, death, etc.)
+divided by the time at risk in a defi ned population over a specifi ed time interval.12 See
+also event rate; rate ratio.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000045 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000045">
+        <rdfs:label>force of mortality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <disjointWith rdf:resource="&epidemiology_ontology;EO:0000046"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The hazard rate of the occurrence
+of death at a point in time tâ€”the limit as Î” t approaches zeroâ€”of the probability that
+an individual alive at time t will die by time t + Î” t, divided by Î” t. Distinct from cumulative
+death rate.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>actuarial death rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>actuarial rate</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000046 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000046">
+        <rdfs:label>cumulative death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The proportion of a group that dies over a specifi ed time
+interval. It is the incidence proportion of death. This may refer to all deaths or to
+deaths from a specifi c cause or causes. If follow-up is not complete on all persons,
+the proper estimation of this rate requires the use of methods that take account of
+censoring. Distinct from force of mortality.
+</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000047 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000047">
+        <rdfs:label>adult literacy rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The percentage of persons 15 years of age and over who can
+read and write</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000048 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000048">
+        <rdfs:label>age-specific fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of live births occurring during a specifi ed
+period to women of a specifi ed age group divided by the number of person-years lived
+during that period by women of that age group. When an age-specifi c fertility rate is
+calculated for a calendar year, the number of live births to women of the specifi ed age
+is usually divided by the midyear population of women of that age.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000049 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000049">
+        <rdfs:label>age-specific rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A rate for a specifi ed age group. The numerator and denominator
+refer to the same age group.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000050 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000050">
+        <rdfs:label>attack rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The proportion of a group that experiences the outcome under study
+over a given period (e.g., the period of an epidemic). This â€œrateâ€ can be determined
+empirically by identifying clinical cases and/or by means of seroepidemiology. It also
+applies in noninfectious settings (e.g., mass poisonings). Because its time dimension
+is uncertain or arbitrarily decided, it should probably not be described as a rate.
+See also infection rate; mass action principle; Reed-Frost model; secondary
+attack rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000051 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000051">
+        <rdfs:label>attributable rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The proportion of the rate (risk) of a disease or other outcome in exposed
+individuals that can be attributed to the exposure. This measure is estimated by subtracting
+the rate (risk) of the outcome (usually, incidence or mortality) among the unexposed
+from the rate (risk) among the exposed individuals; this estimate assumes that
+causes other than the one under investigation have had equal effects on the exposed
+and unexposed groups. Unfortunately, this term has been used to denote a number of
+different concepts, including the attributable fraction in the population, the attributable
+fraction among the exposed, the population excess rate, and the rate difference.
+See also absolute risk reduction; impact numbers.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>causal rate difference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>causal risk difference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>attributable risk</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000052 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000052">
+        <rdfs:label>basic reproductive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <oboInOwl:hasExactSynonym>R0</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/SBO_0000542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>A measure of the number of infections produced,
+on average, by an infected individual in the early stages of an epidemic, when
+virtually all contacts are susceptible. (Some authors use the symbol Z0 for basic
+reproductive rate.)</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Z0
+</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000053 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000053">
+        <rdfs:label>birthrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Birth_Rate</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>A summary rate based on the number of live births in a population over a
+given period, usually 1 year.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://www.ebi.ac.uk/efo/EFO_0004804</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>birth rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/MSH/D001723</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000054 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000054">
+        <rdfs:label>case fatality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <disjointWith rdf:resource="&epidemiology_ontology;EO:0000065"/>
+        <oboInOwl:hasDefinition>The proportion of cases of a specifi ed condition that are fatal
+within a specifi ed time.This defi nition can lead to paradox when more persons die of the disease than develop
+it during a given period. For instance, chemical poisoning that is slowly but inexorably
+fatal may cause many persons to develop the disease over a relatively short period of
+time, but the deaths may not occur until some years later and may be spread over a
+period of years during which there are no new cases. Thus, in calculating the case fatality
+rate, it is necessary to acknowledge that the time dimension varies: it may be brief (e.g.,
+covering only the period of stay in a hospital); of fi nite duration (e.g., 1 year); or of
+longer duration still. The term case fatality rate is then better replaced by a term such
+as survival rate or by the use of a survivorship table. See also attack rate; survivorship
+study.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/SNOMEDCT/409653003</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000055 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000055">
+        <rdfs:label>cause-specific rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A rate that specifi es events, such as deaths, according to their
+cause.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000056 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000056">
+        <rdfs:label>child death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of deaths of children age 1â€“4 years in a given year per
+1000 children in this age group. This is a useful measure of the burden of preventable
+communicable diseases in the child population.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000057 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000057">
+        <rdfs:label>child mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>under-5 mortality rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Health indicator used by the
+United Nations Childrenâ€™s Fund (formerly the United Nations International Childrenâ€™s
+Emergency Fund, or UNICEF), the United Nationd Development Programme
+(UNDP), and other international agencies. It is computed as an annual rate, dividing
+the death count of children under age 5 by the count of live births in the same year and
+expressing the result per thousand. Therefore it is not an age-specifi c mortality rate,
+since the denominator is not the size of the child population under age 5. This rate is
+preferable to the child death rate, which is more diffi cult to determine in communities
+where the age of young children may not be known precisely.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000058 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000058">
+        <rdfs:label>completed fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of children born alive per woman in
+a cohort of women by the end of their childbearing years. See also total fertility
+rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000059 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000059">
+        <rdfs:label>total fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>TFR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The average number of children that would be born
+per woman if all women lived to the end of their childbearing years and bore children
+according to a given set of age-specifi c fertility rates. It is computed by summing the
+age-specifi c fertility rates for all ages and multiplying by the interval into which the ages
+are grouped. The TFR is an important fertility measure, providing the most accurate
+answer to the question â€œHow many children does a woman have on average?â€</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000060 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000060">
+        <rdfs:label>completion rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The proportion or percentage of persons in a survey for whom
+complete data are available for analysis. See also response rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000061 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000061">
+        <rdfs:label>cumulative incidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>average risk</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cumulative incidence rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The number or proportion of a group (cohort) of people who experience
+the onset of a health-related event during a specifi ed time interval; this interval is generally the same for all members of the group, but, as in lifetime incidence, it may
+vary from person to person without reference to age.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>incidence proportion</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000062 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000062">
+        <rdfs:label>death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDbXref>http://purl.bioontology.org/ontology/SNOMEDCT/409651001</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>mortality rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Death_Rate</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>An estimate of the portion of a population that dies during a specifi ed period.
+The numerator is the number of persons dying during the period; the denominator is the number in the population, usually estimated as the midyear population. The death rate
+in a population is generally calculated by the following formula:
+)Number of deaths during
+a specified period/
+Number of persons at risk
+of dying during the period)
+Ã— 10^n
+This rate is an estimate of the person-time death rate, i.e., the death rate per 10^n person/years.
+If the rate is low, it is also a good estimate of the cumulative death rate. This rate
+is also called the crude death rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000063 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000063">
+        <rdfs:label>discount rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A measure of costs, benefi ts, and outcomes in relation to time that
+allows for the fact that money (and health) have greater value in the present than at
+some future time. A term used mainly in economics and in clinical decision analysis.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000064 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000064">
+        <rdfs:label>event rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of people experiencing an event as a proportion of the number
+of people in the population or relative to the person-time experience of the population.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000065 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000065">
+        <rdfs:label>fatality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The death rate observed in a designated series of persons affected by a
+simultaneous event (e.g., victims of a disaster). A term to be avoided, because it can be
+confused with case fatality rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000066 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000066">
+        <rdfs:label>fetal death rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of fetal deaths in a year expressed
+as a proportion of the total number of births (live births plus fetal deaths) in the same
+year.
+
+Fetal death rate = (number of fetal deaths in a year/ number of fetal deaths plus live births in the same year) Ã— 1000
+
+Note that the denominator is larger than for the fetal death ratio and that the fetal death
+rate is therefore lower than the fetal death ratio, which is used in some jurisdictions.
+International comparisons of stillbirth or fetal death statistics will be fl awed if the
+distinction is not appreciated.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000067 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000067">
+        <rdfs:label>general fertility rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <oboInOwl:hasExactSynonym>fertility rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A more refined measure of fertility than the crude
+birthrate. The denominator is restricted to the number of women of childbearing age
+(i.e., 15â€“44 or 15â€“49. Defined as
+General fertility rate =(number of live births in an area
+during a year / midyear female population age 15â€“44
+in same area in same year)Ã— 1000
+The upper age limit for this rate is 44â€”sometimes 49â€”years in most jurisdictions.</oboInOwl:hasDefinition>
+        <epidemiology_ontology:isDictionaryEntry>true</epidemiology_ontology:isDictionaryEntry>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000068 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000068">
+        <rdfs:label>gross reproduction rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>raw coefficient of reproduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The average
+number of female children a woman would have if she survived to the end of
+her childbearing years and if, throughout that period, she were subject to a given set
+of age-specifi c fertility rates and a given sex ratio at birth. It provides a measure of
+replacement-level fertility (or of the replacement of the generations) in the absence
+of mortality. In a hypothetical generation, it is equal to the number of girls born to a
+woman until the end of the reproduction period at a given (current year) age-specifi c
+fertility. See also net reproduction rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000069 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000069">
+        <rdfs:label>growth rate of population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A measure of population growth (in the absence
+of migration) comprising addition of newborns to the population and subtraction of
+deaths. The result, known as natural rate of increase, is calculated as
+((Live births during the yearâ€”deaths during the year)/Midyear population)Ã— 1000
+Alternatively, it is the difference between crude birthrate and crude death rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000070 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000070">
+        <rdfs:label>hebdomadal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry>true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The mortality rate in the fi rst week of life; the
+denominator is the number of live births in a year.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000071 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000071">
+        <rdfs:label>inception rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The rate at which new spells of illness occur in a population. A term
+applied principally to short-term spells of illness, such as acute respiratory infections,
+and preferred by some epidemiologists because an annual incidence rate for such conditions
+may exceed the numbers in the population at risk.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000072 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000072">
+        <rdfs:label>incidence rate</rdfs:label>
+        <equivalentClass rdf:resource="&epidemiology_ontology;EO:0000079"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/IDO_0000484</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>The rate at which new events occur in a population. The numerator is the
+number of new events that occur in a defi ned period or other physical span. The denominator
+is the population at risk of experiencing the event during this period, sometimes
+expressed as person-time; it may instead be in other units, such as passenger-miles. The
+incidence rate most often used in public health practice is calculated from the formula
+
+(Number of new events in specified period/
+Average number of persons exposed to risk during this period)
+Ã— 10n
+Strictly speaking, this ratio is neither a rate nor a proportion but is instead the rate
+multiplied by the length of the specifi ed period. If the period is a year, the ratio is
+nonetheless often called the annual incidence rate. The average size of the population is
+often the estimated population size at the midperiod. The ratio divided by the length of
+the period is an estimate of the person-time incidence rate (i.e., the rate per 10 n personyears).
+If the ratio is small, as with many chronic diseases, it is also a good estimate
+of the cumulative incidence over the period (e.g., a year). If the number of new cases
+during a specifi ed period is divided by the sum of the person-time units at risk for all
+persons during the period, the result is the person-time incidence rate.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Incidence_Rate</oboInOwl:hasDbXref>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000073 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000073">
+        <rdfs:label>incidence rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The incidence rate in the exposed group divided by the incidence
+rate in the unexposed group. Often referred to as the rate ratio.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000074 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000074">
+        <rdfs:label>infant mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A measure of the yearly rate of deaths in children
+less than 1 year old. The denominator is the number of live births in the same year.
+Defi ned as
+
+InfantMortality rate=(number of deaths in a year of
+children less than 1 year of age
+/number of live births in the same year)
+Ã—1000
+This is often cited as a useful indicator of the level of health in a community. The
+denominator is an approximation of the population at risk.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>IMR</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000075 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000075">
+        <rdfs:label>infection rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <oboInOwl:hasDefinition>The incidence rate of manifest plus inapparent infections (the latter
+determined by seroepidemiology).</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000076 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000076">
+        <rdfs:label>force of morbidity</rdfs:label>
+        <equivalentClass rdf:resource="&epidemiology_ontology;EO:0000077"/>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000072"/>
+        <oboInOwl:hasExactSynonym>instantaneous incidence rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A theoretical measure of the number of new cases that occur per unit of
+population-time (e.g., person-years at risk). This is a measure of the occurrence of disease
+at a point in time, t, defined mathematically as the limit, as Î” t approaches zero, of
+(Probability that a person well at time t will develop
+the disease in the interval t + Î” t)/Î” t
+The average value of this quantity over the interval t to (t + Î” t) can be estimated as
+(Incident cases observed from t to (t + Î” t))/(Number of person-time units of experience observed from t to (t + Î” t)</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>person-time incidence rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hazard rate</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000077 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000077">
+        <rdfs:label>instantaneous incidence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000072"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000078 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000078">
+        <rdfs:label>maternal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The risk of dying from causes associated with childbirth.
+The numerator is the deaths arising during pregnancy or from puerperal causes
+(i.e., deaths occurring during and/or due to deliveries, complications of pregnancy, childbirth,
+and the puerperium). Women exposed to the risk of dying from puerperal causes
+are those who have been pregnant during the period. Their number being unknown, the
+number of live births is used as the conventional denominator for computing comparable
+maternal mortality rates. The formula is:
+Annual maternal mortality rate=(number of deaths from puerperal
+causes in a given geographic area during a given year/
+number of live births that occurred among the population ofthe given geographic area during the same year)Ã—1000 (or 100,000)
+There is variation in the duration of the postpartum period in which death may occur and
+be certifi ed as due to â€œpuerperal causes,â€ i.e., maternal mortality. Although the WHO
+defi nes maternal mortality as death during pregnancy or within 42 days of delivery, in
+some areas a period as long as a year is used. Maternal deaths may be subdivided into
+two groups: direct obstetric deaths and indirect obstetric deaths.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000079 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000079">
+        <rdfs:label>morbidity rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDbXref>http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000132</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>A term, preferably avoided, used to refer to the incidence rate and
+sometimes (incorrectly) to the prevalence of disease.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000080 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000080">
+        <rdfs:label>neonatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>1. In vital statistics, the number of deaths in infants under 28 days of age in a given
+period, usually a year, per 1000 live births in that period.
+2. In obstetrical and perinatal research, the term neonatal mortality rate is often used to
+denote the cumulative mortality rate of live-born infants within 28 days of age. See
+death rate.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000081 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000081">
+        <rdfs:label>net migration rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The net effect of immigration and emigration on an areaâ€™s
+population, expressed as an increase or decrease per 1000 population of the area in a
+given year.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000082 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000082">
+        <rdfs:label>net reproduction rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>NRR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The average number of female children born per
+woman in a cohort subject to a given set of age-specifi c fertility rates, a given set of agespecifi
+c mortality rates, and a given sex ratio at birth. This rate measures replacement
+fertility under given conditions of fertility and mortality: it is the ratio of daughters to
+mothers assuming continuation of the specifi ed conditions of fertility and mortality. It is
+a measure of population growth from one generation to another under constant conditions.
+This rate is similar to the gross reproduction rate but takes into account that some women will die before completing their childbearing years. An NRR of 1.00 means that
+each generation of mothers is having exactly enough daughters to replace itself in the
+population. See also gross reproduction rate; replacement-level fertility.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000083 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000083">
+        <rdfs:label>net reproductive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000067"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym>case reproduction rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>In infectious disease epidemiology,
+the average number of secondary cases that will occur in a mixed host population
+of susceptibles and nonsusceptibles when one infected individual is introduced.
+Its relationship to the basic reproductive rate (R0) is given by
+R = R0x
+where x is the proportion of the host population that is susceptible.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000084 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000084">
+        <rdfs:label>perinatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>1. In most industrially developed nations, this is defi ned as
+Perinatal mortality rate=(fetal deaths (28 weeks + of gestation) + postnatal deaths (first week))/(fetal deaths (28 weeks +of gestation) + live births)Ã— 1000
+2. The WHOâ€™s defi nition, more appropriate in nations with less well established vital records, is
+Perinatal mortality rate=late fetal deaths
+(28 weeks + of gestation) +
+postnatal deaths (first week)
+live births in a year
+Ã— 1000
+Note the difference in denominator of the perinatal mortality rate as defi ned by the WHO
+and in industrially developed nations. This makes international comparison diffi cult.
+The WHO Expert Committee on the Prevention of Perinatal Mortality and Morbidity
+(1970) recommended a more precise formulation: â€œLate fetal and early neonatal deaths
+weighing over 1000 g at birth expressed as a ratio per 1000 live births weighing over
+1000 g at birth.â€</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000085 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000085">
+        <rdfs:label>person-time incidence rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A measure of the
+incidence rate of an event (e.g., a disease or death) in a population at risk, given by
+Number of events occurring during the interval/
+Number of person-time units at risk observed
+during the interval</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>interval incidence density</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000086 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000086">
+        <rdfs:label>population excess rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>A measure of the number of disease cases associated
+with exposure to a putative cause of the disease in the population. It is the difference
+between the rates of disease in the entire population and among the nonexposed.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000087 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000087">
+        <rdfs:label>postneonatal mortality rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000062"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The number of infant deaths between 28 days and
+1 year of age in a given year per 1000 live births in that year. It is an important rate to
+monitor in developing countries, where older infants frequently die of infections and
+malnutrition.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000088 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000088">
+        <rdfs:label>rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDbXref>http://purl.org/obo/owl/PATO#PATO_0000161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Rate</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>A measure of the frequency of occurrence of a phenomenon. In epidemiology, demography,
+and vital statistics, a rate is an expression of the frequency with which an event occurs
+in a defi ned population, usually in a specifi ed period of time. Physical units other than time
+may be used for constructing rates, however; for example, in accident epidemiology, deaths
+per passenger-mile is a more meaningful way of comparing modes of transportation. The
+use of rates rather than raw numbers is essential for comparison of experience between
+populations at different times, different places, or among different classes of persons.
+The components of a rate are the numerator, the denominator, the specifi ed time in which
+events occur, and usually a multiplier, a power of 10, that converts the rate from an
+awkward fraction or decimal to a whole number.
+In vital statistics,
+Rate
+number of events in specified period
+av
+=
+erage population during the period
+Ã—10n
+In epidemiology, the denominator is usually person-time.
+All rates are ratios, calculated by dividing a numerator (e.g., the number of deaths or newly
+occurring cases of a disease in a given period) by a denominator (e.g., the average
+population during that period). Some rates are proportions, where the numerator is
+contained within the denominator. Rate has several different usages in epidemiology:
+1. As a wrong synonym for ratio, it refers to proportions as rates, as in the terms
+cumulative incidence rate or survival rate. Proportion and ratio are not synonyms
+for rate.
+2. In other situations, rate refers only to ratios representing relative changes (actual or
+potential) in two quantities. This accords with the Oxford English Dictionary, which
+gives â€œrelative amount of variationâ€ among its defi nitions for rate.
+3. Sometimes rate is further restricted to refer only to ratios representing changes over
+time. In this sense, the term prevalence rate is to be avoided, because prevalence
+cannot (and does not need to) be expressed as a change in time; of course, different
+prevalence estimates may vary, change, and be compared. In contrast, the force of
+mortality and the force of morbidity (hazard rate) are proper rates, for they can be
+expressed as the number of cases developing per unit time divided by the total size
+of the population at risk.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000089 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000089">
+        <rdfs:label>rate difference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasRelatedSynonym>excess rate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition>The absolute difference between two rates; for example, the
+difference in incidence rate between a population group exposed to a causal factor and
+a population group not exposed to the factor:
+RD= Ie âˆ’ Iu
+where Ie = incidence rate among exposed and Iu = incidence rate among unexposed. In
+comparisons of exposed and unexposed groups, the term excess rate may be used as a
+synonym for rate difference.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000090 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000090">
+        <rdfs:label>rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition>The ratio of two rates; e.g., the rate in an exposed population divided by the
+rate in an unexposed population:
+Rate ratio= le/lu
+where Ie is the incidence rate among the exposed and Iu is the incidence rate among the
+unexposed. See also relative risk.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000092 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000092">
+        <rdfs:label>secondary attack rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasRelatedSynonym> basic reproductive rate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>attack rate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> The number of cases of an infection that occur among contacts within the incubation period following exposure to a primary case in relation to the total number of exposed contacts; the denominator is restricted to susceptible contacts when these can be determined. The secondary attack rate is a measure of conÂ­tagiousness and is useful in evaluating control measures. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000093 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000093">
+        <rdfs:label>spleen rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> A term used in malaria epidemiology to define the frequency of enlarged spleens detected on survey of a population in which malaria is prevalent. In associaÂ­tion with the Hackett spleen classification, it summarizes the severity of malaria endemicity. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000094 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000094">
+        <rdfs:label>standardized rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasRelatedSynonym>standardization (direct)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>SRR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> A rate ratio in which the numerator and denomiÂ­nator rates have been standardized (weighted) to the same (standard) population disÂ­tribution. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000095 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000095">
+        <rdfs:label>strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasRelatedSynonym>policy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tactics</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> In public health, a set of essential measures (e.g., social, sanitary, environmental) proven to be effective or efficient to control a health problem. A mid- and long-term plan to improve chances of success for adoption and implementation of healthy public policies. In preventive medicine, seminal work by Geoffrey Rose helped establish the important distinction between the â€œhigh-riskâ€ strategy and the â€œpopulationâ€ strategy. In game theory, a mathematical function. In politics, the means that policymakers choose to attain desired ends. A course of action, an overall plan for achieving specified goals.</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>prevention</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000096 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000096">
+        <rdfs:label>strategy, &quot;high-risk&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> A clinically oriented approach to preventive medicine that focuses its efforts on needy individuals with the highest levels of the risk factor (â€˜the deviant minority with high-risk statusâ€™) and utilizes the established framework of mediÂ­cal services. &quot;A targeted rescue operation for vulnerable individuals.&quot; The aim is to help each person reduce the high level of exposure to a cause or to some intermediate variable. Main strengths of this strategy include that the intervention may be matched to the needs of the individual; it may avoid interference with those who are not at a special risk; it may be accommodated within the ethical and cultural values, organizaÂ­tion, and economics, of the health care system; selectivity may increase the likelihood of a cost-effective use of resources. Main weaknesses of the high-risk strategy are that prevention may become medicalized; success may be palliative and temporary; the conÂ­tribution to overall (population) control of a disease may be small; the preventive interÂ­vention may be behaviorally or culturally inadequate or unsustainable; it has a poor ability to predict which individuals will benefit from the intervention.</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000097 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000097">
+        <rdfs:label>strategy, &quot;population&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasRelatedSynonym>common good</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> A public health-oriented approach to preventive mediÂ­cine and public health predicting that a shift in the population distribution of a risk factor will prevent more burden of disease than targeting people at high risk. It starts with the recognition that the occurrence of common exposures and diseases reflects the functioning of society as a whole. The approach is more relevant to decrease exposure to (1) certain environmental agents that individuals have little capacity to detect than to (2) risk factors that individuals may generally decide to avoid. Main strengths of this strategy include that it may be radical (&quot;only the social and political approach confronts the root causes&quot;); the societal effects of a distributional shift may be large; it may be more culturally appropriate and sustainable to seek a general change in behavioral norms and in the social values that facilitate their adoption than to attempt to individuÂ­ally change behaviors that are socially conditioned. Main limitations of the population strategy are that it offers only a small bene.t to each participating individual, which may be wiped out byfia small risk; it requires major changes in the economics and mode of functioning of society, which often makes changes unlikely. Individuals generally prefer to pay as late as possible and to enjoy the bene.ts as soon as possible. Social benefitsâ€” which are often achieved through processes with the opposite timing of costs and benefitsâ€”may thus be scarcely attractive to the individual. Nevertheless, shared values and targets do exist at the community level. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000098 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000098">
+        <rdfs:label>survival rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en">  The proportion of survivors in a group (e.g., of patients studied and followed over a speci. ed period). The proportion of persons in a speci.ed group alive at the beginning of the time interval (e.g., a 5-year period) who survive to the end of the interval. It is equal to 1 minus the cumulative death rate. May be studied by current or cohort life table methods. </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym> survival proportion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> cumulative survival rate</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000100 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000100">
+        <rdfs:label>true-positive rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> See sensitivity and specificity. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000101 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000101">
+        <rdfs:label>true-negative rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000088"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> See sensitivity and specificity. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000102 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000102">
+        <rdfs:label>ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition>The value obtained by dividing one quantity by another. rate, proportion, and percentage are types of ratios. The numerator of a proportion is included in the popÂ­ulation de.ned by the denominator, whereas in other types of ratios numerator and denominator are distinct quantities, neither being included in the other. The dimenÂ­sionality of a ratio is obtained through algebraic cancellation, summation, etc., of the dimensionalities of its numerator and denominator terms. Both counted and measured values may be included in the numerator and in the denominator. There are no general restrictions on the dimensionalities or ranges of ratios, but there are in some types of ratios (e.g., proportion, prevalence). Ratios are sometimes expressed as percentages (e.g., standardized mortality ratio). In these cases, the value may exceed 100. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000103 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000103">
+        <rdfs:label>age dependency ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000108"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> See dependency ratio. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000104 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000104">
+        <rdfs:label>benefit-cost ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> See cost-bene. t analysis. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000105 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000105">
+        <rdfs:label>cancer mortality:incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000118"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en">  The ratio of mortality to incidence for each of several cancer sites being considered in a study. It is one diagnostic technique among several that can be used to gain some sense of cancer data quality; its main use is in studies of the natural history and survival rates of malignancies. Because not all patients with cancer die of cancer, the number of new cases in any one year should exceed cancer deaths in that same year, and—if cancer mortality and incidence are reported accurately—the ratio between the two should be proportional to the known survival for each speci.c site. For example, cancers with poor survival, such as pancreatic cancer, would be expected to have an </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym> cancer mortality-to-inci­dence ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> cancer MIR</oboInOwl:hasExactSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000106 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000106">
+        <rdfs:label>cross-product ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> See odds ratio. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000107 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000107">
+        <rdfs:label>cumulative incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of the cumulative incidence rate in the exposed to the cumulative incidence rate in the unexposed. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000108 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000108">
+        <rdfs:label>dependency ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> Ratio of children and old people in a population in comparison to all others (i.e., the proportion of economically inactive to economically active);“chil­dren” are usually de.ned those below 15 years of age and “old people” as those 65 years of age and above. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000109 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000109">
+        <rdfs:label>disease odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> See odds ratio. DISEASE PROGRESSION BIAS In studies on the clinical accuracy and validity of diagnostic tests, a bias that occurs if results of the diagnostic test under study and of the reference standard test are not collected on the same patients at the same time, and if spontaneous recovery or progression to a more advanced stage of disease takes place. In etiologic studies, biases that occur when disease progression entails metabolic and other pathophysiologic changes that alter the characteristics or concentrations (e.g., in blood, adipose tissue, target organs, peritumoral tissue) of the study exposure biomarkers. Biomarkers of exposure collected during subclinical or overt disease will then not re.ect exposures of etiologic signi.cance that took place in more distant time windows. For instance, during the progression of some cancers, blood concentrations of lipophilic substances of putative etiologic interest (e.g., lipophilic vitamins, organochlorine compounds) may be increased or decreased due to pathophysiologic changes associated with cancer-induced weight loss, cholestasis or lipid mobilization. </oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>QUADAS</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000110 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000110">
+        <rdfs:label>exposure-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en">The exposure-odds ratio for a set of case-control or cross-sectional data is the ratio of the odds in favor of exposure among the cases (a/b) to the odds in favor of exposure among noncases (c/d). </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000111 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000111">
+        <rdfs:label>exposure ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of rates at which persons in the case and control groups of a case-control study are exposed to the risk factor (or to the protective factor) of interest. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000112 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000112">
+        <rdfs:label>fertility ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> A measure of the fertility of the population that restricts the denomi­nator to the female population of appropriate age for childbearing. The fertility ratio is de. ned as number of girls under 15 years of ageFertility ratio = ——————————————––––––––— × 1000 number of women in the 15–49 age group It should not be confused with general fertility rate. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000113 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000113">
+        <rdfs:label>fetal death ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> A measure of fetal wastage, related to the number of live births. De. ned as number of fetal deaths in a yearFetal death ratio = ————————————————––– number of live births in the same year (Can be expressed as a rate per 1000.) </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000114 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000114">
+        <rdfs:label>incidence-density ratio (idr)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasRelatedSynonym>rate ratio</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of two incidence densities. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000115 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000115">
+        <rdfs:label>incidence rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> The incidence rate in the exposed group divided by the inci­dence rate in the unexposed group. Often referred to as the rate ratio. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000116 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000116">
+        <rdfs:label>likelihood ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> Likelihood ratios are used to appraise screening and diagnostic tests. city. </oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>sensitivity and speci</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000117 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000117">
+        <rdfs:label>mantel-haenszel estimate, mantel-haenszel odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> Mantel and Haenszel provided an adjusted (“summary”) odds ratio estimate that may be derived from grouped and matched sets of data.272 It is now known as the Mantel-Haenszel estimate, one of the few eponymous terms of modern epidemiology. The statistic may be regarded as a type of weighted average of the individual odds ratios, derived from dividing a sample into a series of strata. Ideally, the strata would be internally homogeneous with respect to confounding factors. The Mantel-Haenszel method can also be extended to the summarization of rate ratios and rate differences from follow-up studies. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000118 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000118">
+        <rdfs:label>mortality:incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> See cancer mortality:incidence ratio. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000119 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000119">
+        <rdfs:label>odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym> cross-product ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition xml:lang="en">  The ratio of two odds. The term odds is de.ned differently according to the situation under discussion. Consider the fol­lowing notation for the distribution of a binary exposure and a disease in a population or a sample:  Exposed  Unexposed  Disease  a  b  No disease  c  d  The odds ratio (cross-product ratio) is ad/bc. The exposure-odds ratio for a set of case-control or cross-sectional data is the ratio of the odds in favor of exposure among the cases (a/b) to the odds in favor of exposure among noncases (c/d).This reduces to ad/bc. In a case-control study with incident cases, unbiased subject selection, and a “rare” (uncommon) disease, ad/bc is an approximate estimate of the risk ratio; the accuracy of this approximation is proportional to the cumulative incidence of the disease. With incident cases, unbiased subject selection, and density sampling of controls, ad/bc is an estimate of the ratio of the person-time incidence rates (force of morbidity) in the exposed and unexposed (no rarity assumption is required for this). The disease-odds ratio for a cohort or cross-sectional study is the ratio of the odds in favor of disease among the exposed (a/c) to the odds in favor of disease among the unexposed (b/d).This reduces to ad/bc and hence is equal to the exposure-odds ratio for the cohort or cross section. The prevalence-odds ratio refers to an odds ratio derived cross-sectionally, as, for example, an odds ratio derived from studies of prevalent (rather than incident) cases. The risk-odds ratio is the ratio of the odds in favor of getting disease if exposed to the odds in favor of getting disease if not exposed. The odds ratio derived from a cohort study is an estimate of this ratio. </oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym> relative odds</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>case-control study</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym> rare-disease assumption</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000120 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000120">
+        <rdfs:label>proportional mortality-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000119"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> The odds of deaths from a speci. ed condition in a de.ned population divided by the odds of deaths expected from this Proportional mortality ratio 198 condition in a standard population, usually expressed either on an age-sex-speci. c basis or sex-speci.c after age adjustment. Often preferred to the proportional mortality ratio on the grounds that it tends to better approximate the ratio of mortality rates in the two populations. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000121 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000121">
+        <rdfs:label>proportional mortality ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> The proportion of observed deaths from a speci­.ed condition in a de.ned population divided by the proportion of deaths expected from this condition in a standard population, usually expressed either on an age-sex­speci.c basis or sex-speci.c after age adjustment. Unlike the standardized mortality ratio, it does not require data on the age composition of the population but only on the deaths.The acronym PMR is preferably avoided because the same initial letters can stand for perinatal mortality rate. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000122 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000122">
+        <rdfs:label>rate-odds ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> See odds ratio. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000123 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000123">
+        <rdfs:label>rate ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasRelatedSynonym>relative risk</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of two rates; e.g., the rate in an exposed population divided by the rate in an unexposed population: IeRate ratio =Iu where I e is the incidence rate among the exposed and I u is the incidence rate among the unexposed. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000124 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000124">
+        <rdfs:label>risk-benefit ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> The results of a risk-bene.t analysis expressed as the ratio of risks to bene. ts. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000125 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000125">
+        <rdfs:label>sex ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of one sex to the other. Usually de.ned as the ratio of males to females (or of the rates observed in males and females). </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000126 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000126">
+        <rdfs:label>signal-to-noise ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> In statistics and signal processing, the ratio of explained variation to unexplained (error) variation. A jargon term for the relationship of pertinent . ndings to that which is extraneous or irrelevant or intrudes because measurement methods or other procedures are insuf. ciently sensitive. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000127 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000127">
+        <rdfs:label>standardized incidence ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasExactSynonym> standardized morbidity ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition xml:lang="en">  The ratio of the incident number of cases of a speci.ed condition in the study population to the incident number that would be expected if the study population had the same incidence rate as a standard or other population for which the incidence rate is known; this ratio is usually expressed as a percentage. </oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>standardization (indirect)</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000128 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000128">
+        <rdfs:label>standardized mortality ratio (smr)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> The ratio of the number of deaths observed in the study group or population to the number that would be expected if the study population had the same speci.c rates as the standard population. Often multi­plied by 100. </oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>standardization (indirect)</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000129 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000129">
+        <rdfs:label>standardized rate ratio (srr)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000123"/>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <oboInOwl:hasDefinition xml:lang="en"> A rate ratio in which the numerator and denomi­nator rates have been standardized (weighted) to the same (standard) population dis­tribution. </oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>standardization (direct)</oboInOwl:hasRelatedSynonym>
+    </Class>
+    
+
+
+    <!-- http://epidemiology_ontology.owl#EO:0000130 -->
+
+    <Class rdf:about="&epidemiology_ontology;EO:0000130">
+        <rdfs:label>survival ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&epidemiology_ontology;EO:0000102"/>
+        <epidemiology_ontology:isDictionaryEntry rdf:datatype="&xsd;boolean">true</epidemiology_ontology:isDictionaryEntry>
+        <epidemiology_ontology:inDictionary rdf:datatype="&xsd;boolean">true</epidemiology_ontology:inDictionary>
+        <oboInOwl:hasDefinition xml:lang="en"> The probability of surviving between one age and another; when com­puted for age groups, the ratios correspond to those of the person-years-lived function of a life table. </oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#Disposition -->
+
+    <Class rdf:about="&oboInOwl;Disposition">
+        <rdfs:subClassOf rdf:resource="&oboInOwl;RealizableEntity"/>
+    </Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#RealizableEntity -->
+
+    <Class rdf:about="&oboInOwl;RealizableEntity">
+        <rdfs:subClassOf rdf:resource="&oboInOwl;SpecificallyDependantContinuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SpecificallyDependantContinuant -->
+
+    <Class rdf:about="&oboInOwl;SpecificallyDependantContinuant">
+        <rdfs:subClassOf rdf:resource="&span;DependentContinuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1#Entity -->
+
+    <Class rdf:about="&bfo;Entity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Object -->
+
+    <Class rdf:about="&snap;Object">
+        <rdfs:subClassOf rdf:resource="&span2;IndependentContinuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Occurrent -->
+
+    <Class rdf:about="&snap;Occurrent">
+        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <Class rdf:about="&snap;Quality">
+        <rdfs:subClassOf rdf:resource="&oboInOwl;SpecificallyDependantContinuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#Continuant -->
+
+    <Class rdf:about="&span2;Continuant">
+        <rdfs:subClassOf rdf:resource="&bfo;Entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#IndependentContinuant -->
+
+    <Class rdf:about="&span2;IndependentContinuant">
+        <rdfs:subClassOf rdf:resource="&span2;Continuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <Class rdf:about="&span2;ProcessualEntity">
+        <rdfs:label>quarantine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap2;ProcessualEntity"/>
+        <oboInOwl:hasDefinition>Restriction of the activities of well persons or animals who have been exposed to a
+case of communicable disease during its period of communicability (i.e., contacts) to
+prevent disease transmission during the incubation period if infection should occur.
+</oboInOwl:hasDefinition>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/snap#ObjectAggregate -->
+
+    <Class rdf:about="&snap2;ObjectAggregate">
+        <rdfs:subClassOf rdf:resource="&span2;IndependentContinuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/snap#ProcessualEntity -->
+
+    <Class rdf:about="&snap2;ProcessualEntity">
+        <rdfs:subClassOf rdf:resource="&snap;Occurrent"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#ConnectedTemporalRegion -->
+
+    <Class rdf:about="&span;ConnectedTemporalRegion">
+        <rdfs:subClassOf rdf:resource="&span;TemporalRegion"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#DependentContinuant -->
+
+    <Class rdf:about="&span;DependentContinuant">
+        <rdfs:subClassOf rdf:resource="&span2;Continuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#SpatialRegion -->
+
+    <Class rdf:about="&span;SpatialRegion">
+        <rdfs:subClassOf rdf:resource="&span2;Continuant"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#TemporalInterval -->
+
+    <Class rdf:about="&span;TemporalInterval">
+        <rdfs:subClassOf rdf:resource="&span;ConnectedTemporalRegion"/>
+    </Class>
+    
+
+
+    <!-- http://www.infomis.org/bfo/1.1/span#TemporalRegion -->
+
+    <Class rdf:about="&span;TemporalRegion">
+        <rdfs:subClassOf rdf:resource="&snap;Occurrent"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
